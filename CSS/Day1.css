@@ -1,0 +1,10 @@
+h1 {
+  color: red;
+  text-decoration: overline underline;
+  text-align: center;
+}
+p {
+  color: green;
+  text-align: center;
+  /* text-indent: 50px; */
+}
