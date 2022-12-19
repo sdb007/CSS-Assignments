@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 1px solid grey;
+        padding: 50px;
+        background-color: rgb(190, 172, 172);
+      }
+      .hello {
+        height: 100px;
+        background-color: aqua;
+        margin: 15px;
+        border: 2px solid green;
+      }
+      .container:hover {
+        background-color: black;
+      }
+      .container:hover .a {
+        transition-delay: 0s;
+        background-color: green;
+        border-radius: 30px;
+      }
+      .container:hover .b {
+        transition-delay: 1s;
+        background-color: yellow;
+        border-radius: 30px;
+      }
+      .container:hover .c {
+        transition-delay: 2s;
+        background-color: orange;
+        border-radius: 30px;
+      }
+      .container:hover .d {
+        transition-delay: 4s;
+        background-color: blue;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hello a"></div>
+      <div class="hello b"></div>
+      <div class="hello c"></div>
+      <div class="hello d"></div>
+    </div>
+  </body>
+</html>
