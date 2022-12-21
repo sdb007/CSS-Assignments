@@ -47,7 +47,8 @@ h1 {
   margin-bottom: 40px;
   display: flex;
 
-  justify-content: space-evenly;
+  justify-content: center;
+  column-gap: 50px;
 }
 .logo div {
   padding: 16px;

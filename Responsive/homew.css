@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: black;
+  --orange: rgba(255, 77, 0, 0.91);
+}
+/* Contact Us  */
+.contact {
+  text-align: center;
+  padding: 20px 0;
+}
+.contact span {
+  color: var(--orange);
+}
+.contact p {
+  color: rgb(222, 217, 217);
+  padding-bottom: 15px;
+}
+.contact h1 {
+  font-size: 30px;
+}
+
+/* <!-- Card Section --> */
+.card {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+
+  column-gap: 40px;
+}
+.card > div {
+  /* flex-grow: 1 1 1; */
+  background-color: rgb(33 32 32);
+  padding: 8px;
+  width: 230px;
+  /* border: 2px solid var(--orange); */
+  /* box-shadow: 2px 2px 6px 4px rgb(33 32 32); */
+}
+
+.innercard img {
+  background-color: #00bdfb;
+  filter: invert();
+  border-radius: 20%;
+  width: 40px;
+  height: 40px;
+}
+
+.innercard {
+  display: flex;
+  column-gap: 10px;
+  background-color: rgb(33 32 32);
+}
+.innercard div p,
+h2 {
+  background-color: rgb(33 32 32);
+}
+.innercard p {
+  color: var(--orange);
+}
+#tollfree {
+  color: var(--orange);
+  padding-left: 10px;
+  background-color: rgb(33 32 32);
+}
+.undercard {
+  margin-top: 15px;
+  background-color: rgb(33 32 32);
+}
+.undercard p {
+  padding-bottom: 10px;
+  background-color: rgb(33 32 32);
+}
+
+/* Form Section */
+.form {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  margin-top: 40px;
+}
+.form div img {
+  width: 420px;
+  height: 320px;
+}
+.form h1 {
+  font-size: 30px;
+}
+.form h1 span {
+  color: var(--orange);
+}
+.form div input {
+  width: 300px;
+  padding: 10px;
+  margin: 12px 6px 0 0;
+  background-color: rgb(33 32 32);
+  border: none;
+}
+.form div input::placeholder {
+  color: rgb(222, 217, 217);
+}
+.form div textarea {
+  margin: 20px 0;
+  height: 150px;
+  width: 610px;
+  background-color: rgb(33 32 32);
+  border: none;
+}
+.form div textarea::placeholder {
+  color: rgb(222, 217, 217);
+  padding: 12px;
+}
+.form div button {
+  background-color: var(--orange);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    /* align-items: flex-start; */
+    row-gap: 30px;
+    margin-left: 20px;
+  }
+  .card > div {
+    height: 125px;
+  }
+  /* Form Section */
+  .form {
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .form div img {
+    width: 320px;
+    height: 220px;
+  }
+  .form div textarea {
+    width: 300px;
+    margin-left: 10px;
+  }
+  .form h1 {
+    text-align: center;
+  }
+  .form div input,
+  button {
+    margin-left: 10px;
+  }
+}
