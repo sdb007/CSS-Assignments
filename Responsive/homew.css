@@ -97,6 +97,9 @@ h2 {
   background-color: rgb(33 32 32);
   border: none;
 }
+/* .form div input:focus {
+  border: 1px solid var(--orange);
+} */
 .form div input::placeholder {
   color: rgb(222, 217, 217);
 }
